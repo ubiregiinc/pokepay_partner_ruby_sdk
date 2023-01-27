@@ -165,6 +165,7 @@ class PokepayTest < Minitest::Test
   end
 
   def test_list_account_balances_3
+
     response = $client.send(Pokepay::Request::ListAccountBalances.new(
                               "124a3fe8-1e88-4803-9195-15bbd1722f1a",
                               expires_at_from: "2018-05-08T14:00:21.000000+09:00",
